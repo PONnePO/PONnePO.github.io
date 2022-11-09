@@ -1,0 +1,68 @@
+#navbar li{
+    display: inline;
+    float: left;
+}
+#navbar{
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-right: 1px solid black;
+}
+a{
+    text-decoration: none;
+    font-size: 24px;
+    padding: 14px 16px;
+    display:block
+}
+a:hover{
+    background-color: red;
+}
+#navbar li:last-child{
+    float: right;
+    border-left: 1px solid black;
+}
+.listmenu{
+    display: inline-block; 
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    min-width: 160;
+    z-index: 1;
+}
+.listmenu:hover .dropdown{
+    display: block;
+    border-style: dashed;
+}
+#superheroes{
+    text-align: center;
+    padding: 10px;
+    border: 1px black solid;
+    background-color: aquamarine;
+}
+.rotate{
+    border:1px solid black;
+    background-color: aquamarine;
+    width: 150px;
+    height: 150px;
+    transition: transform 2s,background-color 5s,height 5s;
+}
+.rotate:hover{
+    background-color: blueviolet;
+    height: 300px;
+    transform: rotate(360deg);
+}
+.body1{
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+}
+.avatar{
+    width: 150px;
+    border: 1px solid black;
+}
+html{
+    height: 100%;
+    background-image: linear-gradient(purple,black);
+}
